@@ -1,4 +1,7 @@
 import Navbar from "./components/Navbar"
+import Feature from "./components/Feature"
+import Footer from "./components/Footer"
+// import Hero from "./components/Hero"
 import { useState } from "react";
 
 
@@ -38,6 +41,8 @@ function App() {
         <p className="rounded-full bg-[#D45060] px-5 py-2 text-lg font-bold">v1.0</p>
       </nav> */}
 
+
+      {/* <Hero /> */}
       <header className="px-20 pt-8 text-center">
         <h2 className="text-7xl font-bold">Build pages faster.</h2>
         <p className="mt-5 text-2xl text-[#000000]">An open-source component kit for React.</p>
@@ -86,7 +91,10 @@ function App() {
         </div>
       </div>
 
-      <main className="grid grid-cols-3 gap-8 px-20">
+
+
+      <Feature />
+      {/* <main className="grid grid-cols-3 gap-8 px-20">
         <div className="rounded-xl bg-[#F3E6D5] p-6">
           <span className="rounded-full bg-[#800020] px-4 py-1 text-base font-bold text-[#FFF9F2]">
             Free
@@ -108,11 +116,12 @@ function App() {
           <h3 className="mt-8 text-3xl font-bold">Easy to learn</h3>
           <p className="mt-3 text-xl text-[#000000]">Every component takes a few plain props.</p>
         </div>
-      </main>
-
-      <footer className="mt-auto bg-[#F3E6D5] px-20 py-6 text-center text-xl">
+      </main> */}
+       
+       <Footer />
+      {/* <footer className="mt-auto bg-[#F3E6D5] px-20 py-6 text-center text-xl">
         <p>Maroon UI is free and open source.</p>
-      </footer>
+      </footer> */}
     </div>
   );
 }
